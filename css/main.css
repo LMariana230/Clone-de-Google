@@ -1,0 +1,210 @@
+body{
+    /* Margen del elemento - segunda capa externa  */
+    margin: 0;
+    /* margen hacia adentro */
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+/* ****************************************** */
+/* NAVEGACIÓN */
+
+header{
+    /* width - ancho /// height - alto */
+    width: 100%;
+    height: 60px;
+}
+
+header nav{
+    /* Justificar a la derecha */
+    /* Nos habililitausar flex-end, flex-start */
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section {
+
+    width: 250px;
+    height: auto;
+    /* Eliminar puntitos */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* Centrado verticalmente */
+    align-items: center;
+}
+
+a{
+    /* Eliminar linea abajo de texto */
+    text-decoration: none;
+}
+
+nav .nav-right-section a{
+    color: black;
+    margin-right: 20px;
+}
+
+/* Icono del menu */
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png) ;
+/*  Que la imagen esté contenida en el elemento más grande */
+background-size: contain;
+width: 20px;
+height: 20px;
+background-repeat: no-repeat;
+}
+
+/* Imagen del usuario */
+nav .nav-right-section img{
+    /* Redondeamos bordes */
+    border-radius: 100%;
+    /* Cambiar tamaño de la imagen */
+    width: 30px;
+    height: 30px;
+margin-left: 20px;
+}
+
+/* ******************************** */
+/* MAIN */
+main {
+    
+    margin-top: 80px;
+    text-align: center;
+}
+
+main .main-logo{
+    width: 500px ;
+    /* Centrar absolutamente gracias a los margenes automáticos */
+    /* Vertical // Horizontal */
+    margin: 0 auto;
+}
+
+main .main-logo img{
+    height: 92px;
+}
+
+main .main-input {
+    width: 530px;
+    /* Centrar absolutamente gracias a los margenes automáticos */
+    /* Vertical // Horizontal */
+    margin: 0 auto;
+}
+
+main .main-input-container{
+    /* ancho borde //  borde-estilo // borde-color */
+    border: 1px solid #dfe1e5 ;
+    border-radius: 25px;
+    width: 570px;
+    height: 43px;
+}
+
+main .main-input input{
+    height: 35px;
+    /* quitar el borde */
+    border: none;
+    /* quitar el borde cuando está activo el input */
+    outline: none;
+    width: 400px;
+}
+
+main .main-input .search-icon {
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    padding-left: 15%;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 50%;
+    
+}
+
+main .main-input .micro-icon {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-size: contain;
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 30px;
+}
+
+main .main-input .cam-icon {
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-size: contain;
+    padding-right: 4%;
+    background-repeat: no-repeat;
+    margin-left: 1%;
+
+}
+
+main .botones {
+}
+
+main .buscar-con{
+    background-color: blueviolet;
+    padding-left: 20px;
+}
+
+/* ******************************** */
+/* Footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 49vh;
+}
+
+footer .seccion1 .nav-top-left { 
+border-bottom: 1px solid #e3e4e7;
+background-color: #f5f5f5;
+color: #171616;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15px;
+display: flex;
+align-items: center;
+height: 50px;
+width: 200%;
+list-style: none;
+margin-bottom: 0%;
+margin-top: 0%;
+}
+
+footer nav {
+    background-color: #f5f5f5;
+    display: flex;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+footer nav .nav-left{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+footer nav .nav-left 
+a { 
+    color: black;
+    margin-right: 30px;
+    display: flex;
+    justify-content: start;
+}
+
+footer nav  .nav-right{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+footer nav .nav-right
+a{
+    color: black;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-right: 30px;
+    justify-content: end;
+}
